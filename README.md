@@ -20,7 +20,7 @@ http://192.168.1.240:8080/api/v1/nodes/{node-name}
 ````bigquery
 http://192.168.1.243:8080/api/v1/services
 ````
-  * 2.	API to GET a specific Service on Resource Partition Server: -	
+  * API to GET a specific Service on Resource Partition Server: -	
 ````bigquery
 http://192.168.1.243:8080/api/v1/namespaces/{namespace-name}/services/{service-name}
 ````
