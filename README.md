@@ -179,7 +179,7 @@ kind: Namespace
 ````bigquery
 http://192.168.1.243:8080/api/v1/tenants/{tenant-name}/namespaces
 ````
-**Note: The referal yaml can be like below where one can have to pass**
+**Note: The referal yaml can be like below where one can have to pass**\
    the name of the namespace in value of `name` key (for example here name of namespace is “namespace-2”)\
    the name of the tenant in value of `tenant` key (for example here tenant name is “tenant-2”)
 
