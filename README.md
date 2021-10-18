@@ -1,6 +1,6 @@
 # Resource Partition APIs
 
-## Suppose the Resource Partition Server is running on ubuntu machine having IP 192.168.1.243 so these will be available APIs
+**Suppose the Resource Partition Server is running on `ubuntu` machine having IP `192.168.1.243` so these will be available APIs**
 
 ### 1. APIs for Nodes on RP server:
 
@@ -11,7 +11,7 @@ http://192.168.1.243:8080/api/v1/nodes
 ````                 
   * API to GET a specific node on Resource Partition Server: -
 ````bigquery
-http://192.168.1.240:8080/api/v1/nodes/{node-name}
+http://192.168.1.243:8080/api/v1/nodes/{node-name}
 ````
 
 ### 2. APIs for Services on RP server:
@@ -28,10 +28,10 @@ http://192.168.1.243:8080/api/v1/namespaces/{namespace-name}/services/{service-n
 ````bigquery
 http://192.168.1.243:8080/api/v1/namespaces/{namespace-name}/services
 ````
-#### Note: Here is an example of nginx-service.yaml where one can have to pass
-####       the name of the service in value of ‘name’ key (for example here service name is “nginx-service”)
-####       the name of the namespace in value of ‘namespace’ key (for example here namespace name is “default”)
-
+**Note: Here is an example of nginx-service.yaml where one can have to pass**\
+ the name of the service in value of `name` key (for example here service name is “nginx-service”)\
+ the name of the namespace in value of `namespace` key (for example here namespace name is “default”)
+ 
 ````bigquery
 apiVersion: v1
 kind: Service
@@ -56,10 +56,11 @@ spec:
 ````bigquery
 http://192.168.1.243:8080/api/v1/tenants/{tenant-name}/namespaces/{namespace-name}/services
 ````
-#### Note: Here is an example of nginx-service.yaml where one can have to pass
-####       the name of the service in value of ‘name’ key (for example here service name is “nginx-service”)
-####       the name of the tenant in value of ‘tenant’ key (for example here tenant name is “tenant-1”)
-####       the name of the namespace in value of ‘namespace’ key (for example here namespace name is “default”)
+**Note: Here is an example of nginx-service.yaml where one can have to pass**\
+the name of the service in value of `name` key (for example here service name is “nginx-service”)\
+the name of the tenant in value of `tenant` key (for example here tenant name is “tenant-1”)\
+the name of the namespace in value of `namespace` key (for example here namespace name is “default”)
+
 ````bigquery
 apiVersion: v1
 kind: Service
@@ -105,9 +106,10 @@ http://192.168.1.243:8080/api/v1/namespaces/{namespace-name}/serviceaccounts/{sa
 ````bigquery
 http://192.168.1.243:8080/api/v1/serviceaccounts
 ````
-#### Note: The referal yaml can like below where one can have to pass
-####       the name of the service account in value of ‘name’ key (for example here service name is “test-service-account”)
-####       the name of the namespace in value of ‘namespace’ key (for example here namespace name is “kube-system”)
+**Note: The referal yaml can be like below where one can have to pass**\
+the name of the service account in value of `name` key (for example here service name is “test-service-account”)\
+the name of the namespace in value of `namespace` key (for example here namespace name is “kube-system”)
+
 ````bigquery
 apiVersion: v1
 kind: ServiceAccount
@@ -121,10 +123,10 @@ kind: ServiceAccount
 ````bigquery
 http://192.168.1.243:8080/api/v1/tenants/{tenant-name}/namespaces/{namespace-name}/serviceaccounts
 ````
-#### Note: The referal yaml can like below where one can have to pass
-####       the name of service account in value of ‘name’ key (for example here service name is “test-service-account”)
-####       the name of the tenant in value of ‘tenant’ key (for example here tenant is “tenant-2”).
-####       the name of the namespace in value of ‘namespace’ key (for example here namespace name is “namespace-2”)
+**Note: The referal yaml can be like below where one can have to pass**\
+the name of service account in value of `name` key (for example here service name is “test-service-account”)\
+the name of the tenant in value of `tenant` key (for example here tenant is “tenant-2”)\
+the name of the namespace in value of `namespace` key (for example here namespace name is “namespace-2”)
 
 ````bigquery
 apiVersion: v1
@@ -162,8 +164,8 @@ http://192.168.1.243:8080/api/v1/namespaces/{namespace-name}
 http://192.168.1.243:8080/api/v1/namespaces/
 ````
 
-#### Note: The referal yaml can like below where one can have to pass
-####       the name of the namespace in value of ‘name’ key (for example here name of namespace is “test-namespace”)
+**Note: The referal yaml can be like below where one can have to pass**\
+the name of the namespace in value of `name` key (for example here name of namespace is “test-namespace”)
 
 ```bigquery
 apiVersion: v1
@@ -177,9 +179,9 @@ kind: Namespace
 ````bigquery
 http://192.168.1.243:8080/api/v1/tenants/{tenant-name}/namespaces
 ````
-#### Note: The referal yaml can like below where one can have to pass
-####       the name of the namespace in value of ‘name’ key (for example here name of namespace is “namespace-2”)
-####       the name of the tenant in value of ‘tenant’ key (for example here tenant name is “tenant-2”)
+**Note: The referal yaml can be like below where one can have to pass**
+   the name of the namespace in value of `name` key (for example here name of namespace is “namespace-2”)\
+   the name of the tenant in value of `tenant` key (for example here tenant name is “tenant-2”)
 
 ````bigquery
 apiVersion: v1
@@ -222,8 +224,8 @@ http://192.168.1.243:8080/api/v1/tenants/{tenant -name}
 http://192.168.1.243:8080/api/v1/tenants
 ````
 
-#### Note: The referal yaml can like below where one can have to pass
-####       the name of the tenant in value of ‘tenant’ key (for example here tenant name is “tenant-4”)
+**Note: The referal yaml can be like below where one can have to pass**\
+the name of the tenant in value of `tenant` key (for example here tenant name is “tenant-4”)
 
 ````bigquery
 apiVersion: v1
